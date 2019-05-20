@@ -7,7 +7,9 @@ Ce projet a été réalisé par :
 Pour clonner mon dépo
 
 `git clone https://github.com/LloydWes/j35_js_event.git`
+
 -----
+
 Le code javascript est contenu dans le fichier `script.js`, le fichier est déjà integré dans le code HTML
 
 Les fonctionnalités sont sépaparées par des commentaires 
