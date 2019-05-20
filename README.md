@@ -4,6 +4,8 @@ Ce projet a été réalisé par :
 
 > LLoyd WESTBURY (@Lloyd sur Slack)
 
+----
+
 Pour clonner mon dépo
 
 `git clone https://github.com/LloydWes/j35_js_event.git`
