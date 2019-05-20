@@ -1,10 +1,12 @@
 // Fonctionnalité 1
-// (function(){
-// 	let footer = document.querySelector('footer')
-// 	footer.addEventListener('click', function(){
-// 		console.log('clique');
-// 	});
-// })();
+/*
+(function(){
+	let footer = document.querySelector('footer')
+	footer.addEventListener('click', function(){
+		console.log('clique');
+	});
+})();
+*/
 
 //Fonctionnalité 1 bis
 (function(){
@@ -18,6 +20,7 @@
 		foo.click_number += 1;
 	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionnalité 2
 (function(){
@@ -28,6 +31,7 @@
 		div.classList.toggle("collapse"); 
 	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionnalité 3
 (function(){
@@ -37,6 +41,7 @@
 		card_text.style.color = "red";
 	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionalité 4
 (function(){
@@ -54,6 +59,7 @@
 		}
 	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionalité 5
 (function(){
@@ -70,6 +76,7 @@
 		}
 	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionalité 6
 (function(){
@@ -104,6 +111,7 @@
 	});
 	}
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionnalité 7
 (function(){
@@ -115,8 +123,56 @@
 		card_row_container.insertBefore(last_card,first_card);
 	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
 
 //Fonctionnalité 8
 (function(){
-	
+	let arrow_btn = document.querySelector('.btn.btn-primary.my-2');
+	arrow_btn.addEventListener('click', function(e){
+		let card_row_container = document.querySelector('.album.py-5.bg-light').firstElementChild.firstElementChild;
+		let first_card = card_row_container.firstElementChild;
+		let last_card = card_row_container.lastElementChild;
+		card_row_container.insertBefore(first_card, last_card.nextElementSibling);
+		e.preventDefault();
+	});
 })();
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+//Fonctionnalité 9
+(function(){
+	let strong_tags = document.getElementsByTagName('strong');
+	let logo = null;
+	for(let strong of strong_tags){
+		if(strong.innerText == "JS & Events")
+		{
+			logo = strong;
+		}
+	}
+	function event_on_document(e){
+		console.log(String.fromCharCode(e.keyCode));
+		let body = document.getElementsByTagName('body')[0];
+
+		switch(String.fromCharCode(e.keyCode)){
+			case 'a':
+			body.className = "col-4";
+			break;
+			case 'y':
+			body.className = "col-4 offset-md-4";
+			break;
+			case 'p':
+			body.className = "col-4 offset-md-8";
+			break;
+			case 'b':
+			body.className = "";
+			break;
+		}
+	}
+	logo.addEventListener('selectstart', function(e){
+		document.addEventListener('keypress', event_on_document);
+	}, true);
+	document.addEventListener('click', function(e){
+		document.removeEventListener('keypress', event_on_document)
+	});
+})();
+////////////////////////////////////////////////////////////////////////////////////////
