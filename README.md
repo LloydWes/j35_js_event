@@ -17,3 +17,7 @@ Le code javascript est contenu dans le fichier `script.js`, le fichier est déj�
 Les fonctionnalités sont sépaparées par des commentaires 
 
 En ce qui concerne les fonctionnalités 3 et 4 tu devras commenter la fonctionnalité 6 pour pouvoir les tester (sinon le bouton view te fuira a chaque fois que tu veux cliquer dessus, c'est chiant).
+
+Pour la fonctionnalité 9 tu dois :
+
+> Sélectionner le texte (JS & Events) pour activer l'utilisation des touches, clique n'importe où sur la page pour désactiver la fonctionnalité 9.
