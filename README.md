@@ -20,4 +20,6 @@ En ce qui concerne les fonctionnalités 3 et 4 tu devras commenter la fonctionna
 
 Pour la fonctionnalité 9 tu dois :
 
-> Sélectionner le texte (JS & Events) pour activer l'utilisation des touches, clique n'importe où sur la page pour désactiver la fonctionnalité 9.
+* Sélectionner le texte (JS & Events) pour activer l'utilisation des touches
+
+* Cliquer n'importe où sur la page pour désactiver la fonctionnalité 9.
