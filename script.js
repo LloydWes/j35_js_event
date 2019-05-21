@@ -117,11 +117,12 @@
 //Fonctionnalité 7
 (function(){
 	let arrow_btn = document.querySelector('.btn.btn-secondary.my-2');
-	arrow_btn.addEventListener('click', function(){
+	arrow_btn.addEventListener('click', function(e){
 		let card_row_container = document.querySelector('.album.py-5.bg-light').firstElementChild.firstElementChild;
 		let first_card = card_row_container.firstElementChild;
 		let last_card = card_row_container.lastElementChild;
 		card_row_container.insertBefore(last_card,first_card);
+		e.preventDefault();
 	});
 })();
 ////////////////////////////////////////////////////////////////////////////////////////
