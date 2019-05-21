@@ -27,6 +27,7 @@
 	let header = document.querySelector('header');
 	let btn_menu = document.querySelector('.navbar-toggler');
 	let div = document.querySelector('div[class*="collapse"]');
+
 	btn_menu.addEventListener('click', function menu(e){
 		div.classList.toggle("collapse"); 
 	});
@@ -81,7 +82,7 @@
 //Fonctionalité 6
 (function(){
 	let cards = document.querySelectorAll('.card');
-	let cards_edit_btn = document.querySelectorAll('.btn.btn-sm.btn-outline-secondary');
+	let cards_edit_btn = document.querySelectorAll('.btn.btn-sm.btn-success');
 	for(let i=0; i<cards.length; i++){
 		cards_edit_btn[i].addEventListener('mouseover', function collapse_card(e){
 			let relatedTarget = e.relatedTarget;
