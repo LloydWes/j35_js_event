@@ -117,7 +117,7 @@
 //Fonctionnalité 7
 (function(){
 	let arrow_btn = document.querySelector('.btn.btn-secondary.my-2');
-	arrow_btn.addEventListener('mouseover', function(){
+	arrow_btn.addEventListener('click', function(){
 		let card_row_container = document.querySelector('.album.py-5.bg-light').firstElementChild.firstElementChild;
 		let first_card = card_row_container.firstElementChild;
 		let last_card = card_row_container.lastElementChild;
